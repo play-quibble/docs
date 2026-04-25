@@ -1,0 +1,17 @@
+MEGALINTER_FLAVOR: documentation
+
+ENABLE_LINTERS:
+  - ACTION_ACTIONLINT
+  - JSON_JSONLINT
+  - MARKDOWN_MARKDOWNLINT
+  - YAML_YAMLLINT
+  - SPELL_CSPELL
+
+FILTER_REGEX_EXCLUDE: (megalinter-reports|node_modules|dist|\.astro)
+
+APPLY_FIXES: all
+APPLY_FIXES_EVENT: pull_request
+APPLY_FIXES_COMMIT_MSG: "style: auto-fix by MegaLinter"
+
+GITHUB_STATUS_REPORTER: true
+GITHUB_COMMENT_REPORTER: true
