@@ -1,0 +1,32 @@
+---
+title: Quibble
+description: Self-hosted live trivia for Kubernetes
+template: splash
+hero:
+  tagline: Self-hosted live trivia for teams and events. Host runs it, players just need a browser.
+  actions:
+    - text: Get Started
+      link: /docs/getting-started/introduction/
+      icon: right-arrow
+    - text: GitHub
+      link: https://github.com/play-quibble/trivia
+      icon: external
+      variant: minimal
+---
+
+import { CardGrid, Card } from '@astrojs/starlight/components';
+
+<CardGrid stagger>
+  <Card title="No account required to play" icon="rocket">
+    Players join with a 6-character code and a display name — nothing else. Hosts manage everything from an authenticated dashboard.
+  </Card>
+  <Card title="Deploy with Helm" icon="puzzle">
+    One Helm chart installs the API, web frontend, and Redis on any Kubernetes cluster in minutes.
+  </Card>
+  <Card title="Live scoring" icon="star">
+    Answers stream over WebSocket in real time. Hosts review free-text answers and override scores before releasing the leaderboard.
+  </Card>
+  <Card title="Open source" icon="open-book">
+    Self-host on your own infrastructure. DigitalOcean, GKE, k3s — anything with Kubernetes works.
+  </Card>
+</CardGrid>
